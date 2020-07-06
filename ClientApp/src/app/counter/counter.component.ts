@@ -5,9 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './counter.component.html'
 })
 export class CounterComponent {
-  public currentCount = 0;
 
-  public incrementCounter() {
+  currentCount = 0;
+  messagePrompt = "Say something";
+  encryptedMessageText: string;
+
+  incrementCounter() {
     this.currentCount++;
+  }
+
+  getMessage( encrypMessage: string){
+    this.encryptedMessageText = encrypMessage;
   }
 }

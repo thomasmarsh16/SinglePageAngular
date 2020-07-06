@@ -13,6 +13,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { WeatherGraphComponent } from './weather-graph/weather-graph.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 import { AuthGuard } from './auth/auth.guard';
+import { InputEncryptorComponent } from './input-encryptor/input-encryptor.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AuthGuard } from './auth/auth.guard';
     HomeComponent,
     CounterComponent,
     FetchDataComponent,
-    WeatherGraphComponent
+    WeatherGraphComponent,
+    InputEncryptorComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),

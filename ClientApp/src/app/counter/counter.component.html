@@ -5,3 +5,8 @@
 <p aria-live="polite">Current count: <strong>{{ currentCount }}</strong></p>
 
 <button class="btn btn-primary" (click)="incrementCounter()">Increment</button>
+<br>
+<br>
+<app-input-encryptor [message]="messagePrompt" (newMessageEvent)="getMessage($event)"></app-input-encryptor>
+
+<p>Encrypted Message: {{encryptedMessageText}}</p>
